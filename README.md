@@ -1,2 +1,2 @@
 # GoLangExercises
-## Contains all the programs as part of the exercise.
+## Contains all the programs as part of the go exercise.
