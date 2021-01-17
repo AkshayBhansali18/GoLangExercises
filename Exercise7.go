@@ -8,10 +8,10 @@ import (
 )
 
 func main() {
-url:= "http://www.google.com/robots.txt"
-channel:= make(chan string)
-go read(channel, url)
-fmt.Println(<-channel)
+	url:= "http://www.google.com/robots.txt"
+	channel:= make(chan string)
+	go read(channel, url)
+	fmt.Println(<-channel)
 }
 func read(c chan string,url string) {
 	res, err := http.Get(url)
